@@ -5,6 +5,10 @@ import Navbar from './Utils/Navbar';
 import Hero from './components/Hero';
 import ProductCarousal from './components/ProductCarousal';
 import DataProduct from './components/DataProduct';
+import ContactUs from './components/ContactUs ';
+import Wallet from './components/Wallet';
+
+
 
 
 function App() {
@@ -14,7 +18,8 @@ function App() {
     <Hero/>
   <ProductCarousal/>
   <DataProduct/>
-
+  <Wallet/>
+<ContactUs/>
     </div>
   );
 }

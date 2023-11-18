@@ -5,13 +5,17 @@ import { Button } from 'primereact/button';
 import { Rating } from 'primereact/rating';
 import { Tag } from 'primereact/tag';
 import { SelectButton } from 'primereact/selectbutton';
-
+import img from "../Assets/7.png"
+import img1 from "../Assets/8.png"
+import img2 from "../Assets/3.png"
+import img3 from "../Assets/4.png"
+import img4 from "../Assets/5.png"
+import img5 from "../Assets/6.png"
 export default function DataProduct() {
     const [products, setProducts] = useState([]);
     const [selectedOption, setSelectedOption] = useState('latest'); // Default option is 'latest'
 
     useEffect(() => {
-        // Define product data directly within the component
         const productData = [
             {
                 name: 'Product 1',
@@ -19,13 +23,7 @@ export default function DataProduct() {
                 category: 'Electronics',
                 rating: 4,
                 inventoryStatus: 'INSTOCK',
-            },
-            {
-                name: 'Product 2',
-                price: 25.0,
-                category: 'Clothing',
-                rating: 3.5,
-                inventoryStatus: 'LOWSTOCK',
+                image: img,
             },
             {
                 name: 'Product 1',
@@ -33,30 +31,36 @@ export default function DataProduct() {
                 category: 'Electronics',
                 rating: 4,
                 inventoryStatus: 'INSTOCK',
-            },
-            {
-                name: 'Product 2',
-                price: 25.0,
-                category: 'Clothing',
-                rating: 3.5,
-                inventoryStatus: 'LOWSTOCK',
-            },
-            {
+                image: img1,
+            },   {
                 name: 'Product 1',
                 price: 20.0,
                 category: 'Electronics',
                 rating: 4,
                 inventoryStatus: 'INSTOCK',
+                image: img2,
+            },   {
+                name: 'Product 1',
+                price: 20.0,
+                category: 'Electronics',
+                rating: 4,
+                inventoryStatus: 'INSTOCK',
+                image: img3,
+            },   {
+                name: 'Product 1',
+                price: 20.0,
+                category: 'Electronics',
+                rating: 4,
+                inventoryStatus: 'INSTOCK',
+                image: img4,
+            },   {
+                name: 'Product 1',
+                price: 20.0,
+                category: 'Electronics',
+                rating: 4,
+                inventoryStatus: 'INSTOCK',
+                image: img5,
             },
-            {
-                name: 'Product 2',
-                price: 25.0,
-                category: 'Clothing',
-                rating: 3.5,
-                inventoryStatus: 'LOWSTOCK',
-            },
-            
-            // Add more products as needed
         ];
 
         setProducts(productData);
@@ -76,6 +80,10 @@ export default function DataProduct() {
 
     const statusBodyTemplate = (product) => {
         return <Tag value={product.inventoryStatus} severity={getSeverity(product)}></Tag>;
+    };
+
+    const imageBodyTemplate = (product) => {
+        return <img src={product.image} alt={product.name} className="product-image" />;
     };
 
     const getSeverity = (product) => {
@@ -109,15 +117,15 @@ export default function DataProduct() {
     const footer = `In total there are ${products ? products.length : 0} products.`;
 
     return (
-        <div className="card p-8">
-        <DataTable value={products} header={header} footer={footer} tableStyle={{ minWidth: '60rem' }}>
-            <Column field="name" header="Name"></Column>
-            <Column field="price" header="Price" body={priceBodyTemplate}></Column>
-            <Column field="category" header="Category"></Column>
-            <Column field="rating" header="Reviews" body={ratingBodyTemplate}></Column>
-            <Column header="Status" body={statusBodyTemplate}></Column>
-        </DataTable>
-    </div>
-    
+        <div className="card p-8" style={{ backgroundColor: "#E4E5FD" }}>
+            <DataTable value={products} header={header} footer={footer} tableStyle={{ minWidth: '60rem' }}>
+                <Column field="name" header="Name"></Column>
+                <Column field="image" header="Image" body={imageBodyTemplate}></Column>
+                <Column field="price" header="Price" body={priceBodyTemplate}></Column>
+                <Column field="category" header="Category"></Column>
+                <Column field="rating" header="Reviews" body={ratingBodyTemplate}></Column>
+                <Column header="Status" body={statusBodyTemplate}></Column>
+            </DataTable>
+        </div>
     );
 }
