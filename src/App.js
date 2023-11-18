@@ -8,6 +8,7 @@ import DataProduct from './components/DataProduct';
 import ContactUs from './components/ContactUs ';
 import Wallet from './components/Wallet';
 import Deals from './Utils/Deals';
+import Gallery from './components/Gallery';
 
 
 
@@ -21,7 +22,7 @@ function App() {
   <Deals/>
   <DataProduct/>
   <Wallet/>
-  
+  <Gallery/>
 <ContactUs/>
     </div>
   );
