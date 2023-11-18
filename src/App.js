@@ -5,7 +5,7 @@ import Navbar from './Utils/Navbar';
 import Hero from './components/Hero';
 import ProductCarousal from './components/ProductCarousal';
 import DataProduct from './components/DataProduct';
-import A from './components/A';
+
 
 function App() {
   return (
