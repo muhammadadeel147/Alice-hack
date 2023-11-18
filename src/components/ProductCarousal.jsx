@@ -35,7 +35,7 @@ export default function ProductCarousal() {
             {
                 name: 'Product 1',
                 price: 20.0,
-                image: img3,
+                image: img,
                 inventoryStatus: 'INSTOCK',
             },
             {

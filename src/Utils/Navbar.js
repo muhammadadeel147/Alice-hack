@@ -1,49 +1,26 @@
 // Navbar.js
 import React from 'react';
-import { Menubar } from 'primereact/menubar';
-import 'primeicons/primeicons.css';
-import 'primereact/resources/themes/saga-blue/theme.css';
-import 'primereact/resources/primereact.min.css';
-import './Navbar.css'; 
-import { InputText } from 'primereact/inputtext';
+import { Link } from 'react-router-dom'; // Assuming you are using React Router for navigation
+import './Navbar.css';
 
 const Navbar = () => {
-    const items = [
-      {
-        label: 'Home',
-        icon: 'pi pi-home',
-        url: '#',
-      },
-      {
-        label: 'Services',
-        icon: 'pi pi-cog',
-        url: '#',
-      },
-      {
-        label: 'Products',
-        icon: 'pi pi-shopping-cart',
-        url: '#',
-      },
-      {
-        label: 'Contact',
-        icon: 'pi pi-envelope',
-        url: '#',
-      },
-      {
-        label: 'About Us',
-        icon: 'pi pi-info-circle',
-        url: '#',
-      },
-    ];
-  
-    const start = <img alt="logo" src="https://primefaces.org/cdn/primereact/images/logo.png" height="40" className="p-mr-2 abc" />;
-    const end = <InputText placeholder="Search" type="text" className="p-inputtext-sm" />;
-  
-    return (
-      <div >
-        <Menubar model={items} start={start} end={end} className='navbar'/>
+  return (
+    <div className="navbar">
+      <div className="navbar-left">
+        <span className="digital-art-text">Digital Art</span>
       </div>
-    );
-  };
-  
-  export default Navbar;
+      <div className="navbar-center">
+        <Link to="/">Home</Link>
+        <Link to="/about">About</Link>
+        <Link to="/product">Product</Link>
+        <Link to="/contact-us">Contact Us</Link>
+      </div>
+      <div className="navbar-right">
+     
+        <button className="signin-button">Sign In</button>
+      </div>
+    </div>
+  );
+};
+
+export default Navbar;

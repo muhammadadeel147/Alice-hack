@@ -7,6 +7,7 @@ import ProductCarousal from './components/ProductCarousal';
 import DataProduct from './components/DataProduct';
 import ContactUs from './components/ContactUs ';
 import Wallet from './components/Wallet';
+import Deals from './Utils/Deals';
 
 
 
@@ -17,8 +18,10 @@ function App() {
     <Navbar />
     <Hero/>
   <ProductCarousal/>
+  <Deals/>
   <DataProduct/>
   <Wallet/>
+  
 <ContactUs/>
     </div>
   );
