@@ -14,7 +14,7 @@ function App() {
     <Hero/>
   <ProductCarousal/>
   <DataProduct/>
-  <A/>
+
     </div>
   );
 }
