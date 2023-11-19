@@ -46,6 +46,7 @@
   padding-top: 20px;
   transition: ease 0.5s;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  margin-top: 16px;
 }
 
 .hello a {
