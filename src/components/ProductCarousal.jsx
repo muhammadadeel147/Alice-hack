@@ -113,7 +113,7 @@ export default function ProductCarousal() {
     };
 
     return (
-        <div className="card">
+        <div className="card" style={{width:"100%"}}>
             <h2 className="text-center mb-4">Some of our NFTs</h2>
             <Carousel
                 value={products}

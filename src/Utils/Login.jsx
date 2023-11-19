@@ -4,11 +4,11 @@ import { InputText } from 'primereact/inputtext'
 import React from 'react'
 import { Link } from 'react-router-dom'
 import img from "../Assets/7.png"
-import Navbar from './Navbar'
+
 const Login = () => {
   return (
     <>
-    <Navbar/>
+  
     <div>
         <div className="flex align-items-center justify-content-center">
     <div className="surface-card p-4 shadow-2 border-round w-full lg:w-6">
@@ -30,7 +30,7 @@ const Login = () => {
                 
                 <a href='#' className="font-medium no-underline ml-2 text-blue-500 text-right cursor-pointer">Forgot your password?</a>
             </div>
-            <Link to="/dashboard">
+            <Link to="/reports">
   <Button label="Sign In" icon="pi pi-user" className="w-full" />
 </Link>
            

@@ -11,7 +11,7 @@ const SharedGrid = ({ data,columns,handleUpdate, handleDelete }) => {
     const [selectedProducts, setSelectedProducts] = useState(null);
     const [rowClick, setRowClick] = useState(true);
     const [first, setFirst] = useState(0);
-    const [rows, setRows] = useState(5);
+    const [rows, setRows] = useState(10);
     const [visibleUpdateForm, setVisibleUpdateForm] = useState(false); // State for showing the editing form
   const [updateFormValue, setUpdateFormValue] = useState('');
     const onPageChange = (event) => {
@@ -21,21 +21,10 @@ const SharedGrid = ({ data,columns,handleUpdate, handleDelete }) => {
   const startRecord = first + 1;
   const endRecord = Math.min(first + rows, data.length);
   const totalRecords = data.length;
-  const handleDropdownSelect = (value, rowData) => {
-    if (value === 'update') {
-      handleUpdate(rowData.id, rowData);
-    } else if (value === 'delete') {
-      handleDelete(rowData.id);
-    }
-  };
-  const dropdownItems = [
-    { label: 'Update', value: 'update' },
-    { label: 'Delete', value: 'delete' },
-  ];
-  
+
   return (
     <div className="shared-grid">
-    <div className="card" style={{ marginLeft: "210px", marginRight: "15px" }}>
+    <div className="card" style={{ marginLeft: "210px",  }}>
     <DataTable
           value={data}
           rows={rows}
@@ -60,25 +49,8 @@ const SharedGrid = ({ data,columns,handleUpdate, handleDelete }) => {
             header={column.header}
           />
         ))}
-        {/* <Column
-          header="ACTION"
-          body={(rowData) => rowData.actions}
-          headerStyle={{ width: "6rem" }}
-        /> */}
+     
 
-<Column
-            header="ACTION"
-            body={(rowData) => (
-              <Dropdown 
-              value={null}
-              placeholder="..."
-                options={dropdownItems}
-                onChange={(e) => handleDropdownSelect(e.value, rowData)}
-                className="custom-dropdown"
-              />
-            )}
-            headerStyle={{ width: "3rem" }}
-          />
       </DataTable>
    
     </div>

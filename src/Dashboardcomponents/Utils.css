@@ -17,7 +17,7 @@
 
 .sidebar-item i {
   margin-right: 10px;
-  font-size: 1.2em; /* Adjust the icon size as needed */
+  font-size: 1.2em; 
 }
 
 .sidebar-item span {
@@ -42,7 +42,7 @@
   position: fixed;
   left: 0;
   border-right: 1px solid #ccc;
-  margin-top: 20px;
+  margin-top: -22px;
   padding-top: 20px;
   transition: ease 0.5s;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);

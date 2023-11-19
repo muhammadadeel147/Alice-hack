@@ -1,10 +1,10 @@
 import React from 'react'
-import "./Navbar.css"
+import "./DashNavbar.css"
 
 import { FaSearch } from 'react-icons/fa';
 import { FaUserCircle } from 'react-icons/fa';
 import { FaBell } from 'react-icons/fa';
-import logo from "../Assets/shisLogo.png"
+ import logo from "../Assets/8.png"
 function Navbar() {
   return (
     <div className='navbar'>
@@ -13,7 +13,7 @@ function Navbar() {
      {/* <h1 style={{color:"darkblue", marginLeft:"20px"}}>L0G0
        <span className='ipsum'>IPSUM</span>
        </h1>  */}
-       <div className='nav-right'>
+       <div className='nav-rights'>
        <div className='icon'>
        <FaBell size={15}/>
       </div>

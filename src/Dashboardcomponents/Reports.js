@@ -1,15 +1,13 @@
 import React,{useEffect,useState} from 'react'
-import Navbar from '../Utils/Navbar.js';
-import Sidebar from '../Utils/Sidebar';
-import Menu from '../Utils/Menu.jsx';
+
+import Sidebar from './Sidebar';
+import Menu from './Menu.jsx';
 import { BsPerson } from 'react-icons/bs';
 import SharedGrid from './SharedGrid.jsx';
 import { Button } from 'primereact/button';
-import { useDispatch, useSelector } from 'react-redux';
-import { fetchUsers } from '../redux/slice/userSlice.jsx';
-import ReusableDialog from '../Utils/ReusableDialog.jsx';
+// import ReusableDialog from './ReusableDialog.jsx';
 import { Dialog } from 'primereact/dialog';
-import UserData from './UserData.jsx';
+
 function Reports() {
   // const dispatch=useDispatch();
   // const state = useSelector((state) => state.todo);
@@ -50,7 +48,7 @@ function Reports() {
   ];
   return (
     <div>
-        <Navbar/>
+   
         
       <Sidebar/>
       <h1 style={{marginRight:"990px",paddingTop: "32px",paddingBottom:"10px" }}>Reports</h1>

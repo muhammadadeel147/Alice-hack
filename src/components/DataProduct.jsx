@@ -11,7 +11,7 @@ import img2 from "../Assets/3.png"
 import img3 from "../Assets/4.png"
 import img4 from "../Assets/5.png"
 import img5 from "../Assets/6.png"
-import Navbar from '../Utils/Navbar';
+
 export default function DataProduct() {
     const [products, setProducts] = useState([]);
     const [selectedOption, setSelectedOption] = useState('latest'); // Default option is 'latest'
@@ -120,8 +120,8 @@ export default function DataProduct() {
 
     return (
         <>
-        <Navbar/>
-        <div className="card p-8" style={{ backgroundColor: "#E4E5FD" }}>
+     
+        <div className="card p-8" style={{ backgroundColor: "#E4E5FD",width:"100%" }} >
             <DataTable value={products} header={header} footer={footer} tableStyle={{ minWidth: '60rem' }}>
                 <Column field="name" header="Name"></Column>
                 <Column field="image" header="Image" body={imageBodyTemplate}></Column>
