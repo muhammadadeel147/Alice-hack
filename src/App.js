@@ -17,6 +17,7 @@ import Wallet from './components/Wallet';
 import DataProduct from './components/DataProduct';
 
 import Reports from './Dashboardcomponents/Reports';
+import Dashboard from './Dashboardcomponents/Dashboard';
 function App() {
   return (
     <div className="App">
@@ -28,13 +29,9 @@ function App() {
           <Route path="/wallet" exact element={<Wallet/>} />
           <Route path="/product" exact element={<DataProduct/>} />
           <Route path="/reports" exact element={<Reports/>} />
-          {/* <Route path="/dashboard" element={<Dashboard/>} />
-          <Route path="/department" element={<Department/>} />
-          <Route path="/users" element={<Users/>} />
-          <Route path="/designation" element={<Designation/>} />
-          <Route path="/projects" element={<Projects/>} />
-          <Route path="/employee" element={<Employee/>} />
-          <Route path="/reports" element={<Reports/>} /> */}
+          <Route path="/dashboard" element={<Dashboard/>} />
+
+        
         </Routes>
 
    
