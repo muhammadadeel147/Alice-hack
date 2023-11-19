@@ -5,19 +5,10 @@ import Menu from './Menu.jsx';
 import { BsPerson } from 'react-icons/bs';
 import SharedGrid from './SharedGrid.jsx';
 import { Button } from 'primereact/button';
-// import ReusableDialog from './ReusableDialog.jsx';
-import { Dialog } from 'primereact/dialog';
+
 
 function Reports() {
-  // const dispatch=useDispatch();
-  // const state = useSelector((state) => state.todo);
-  // useEffect(() => {
-  //   dispatch(fetchUsers());
-  // }, [dispatch]);
 
-  // const data = state.data; // Initialize as an empty array
-  // console.log(data)
-  const [visible, setVisible] = useState(false);
   const data = [];
 
   for (let i = 3; i <= 17; i++) {
@@ -51,15 +42,16 @@ function Reports() {
    
         
       <Sidebar/>
-      <h1 style={{marginRight:"990px",paddingTop: "32px",paddingBottom:"10px" }}>Reports</h1>
+      <h1 style={{marginRight:"1350px",paddingBottom:"10px" }}>Reports</h1>
       <Menu/>
-      {/* <UserData/> */}
+    
       <div className="department-container">
       <div className="departbutton">
           <Button
-            label="Add Report"
+            label="Add NFT"
             icon="pi pi-plus"
             // onClick={() => setVisible(true)}
+            style={{ marginRight: '1345px' }}
           />
         </div>
         </div>

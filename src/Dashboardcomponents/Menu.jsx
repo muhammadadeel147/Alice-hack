@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Menu.css';
 
 const Menu = () => {
-  const options = ['All(321)', 'Attendence(10)', 'Exemption(12)', 'Shift(5)', 'Worksheet(6) '];
+  const options = ['All(321)', 'Game(10)', 'Monkey(12)', 'Movie(5)', 'Character(6) '];
 
  
   const [selectedOption, setSelectedOption] = useState(options[0]);
