@@ -11,13 +11,15 @@ const Navbar = () => {
       </div>
       <div className="navbar-center">
         <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
+        <Link to="/wallet">Wallet</Link>
         <Link to="/product">Product</Link>
         <Link to="/contact-us">Contact Us</Link>
       </div>
       <div className="navbar-right">
      
-        <button className="signin-button">Sign In</button>
+      <Link to="/sign-in">
+      <button className="signin-button">Sign In</button>
+    </Link>
       </div>
     </div>
   );

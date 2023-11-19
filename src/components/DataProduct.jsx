@@ -11,6 +11,7 @@ import img2 from "../Assets/3.png"
 import img3 from "../Assets/4.png"
 import img4 from "../Assets/5.png"
 import img5 from "../Assets/6.png"
+import Navbar from '../Utils/Navbar';
 export default function DataProduct() {
     const [products, setProducts] = useState([]);
     const [selectedOption, setSelectedOption] = useState('latest'); // Default option is 'latest'
@@ -103,6 +104,7 @@ export default function DataProduct() {
     };
 
     const header = (
+       
         <div className="flex flex-wrap align-items-center justify-content-between gap-2">
             <SelectButton
                 value={selectedOption}
@@ -117,6 +119,8 @@ export default function DataProduct() {
     const footer = `In total there are ${products ? products.length : 0} products.`;
 
     return (
+        <>
+        <Navbar/>
         <div className="card p-8" style={{ backgroundColor: "#E4E5FD" }}>
             <DataTable value={products} header={header} footer={footer} tableStyle={{ minWidth: '60rem' }}>
                 <Column field="name" header="Name"></Column>
@@ -127,5 +131,6 @@ export default function DataProduct() {
                 <Column header="Status" body={statusBodyTemplate}></Column>
             </DataTable>
         </div>
+        </>
     );
 }

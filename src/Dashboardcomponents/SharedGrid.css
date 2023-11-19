@@ -1,0 +1,39 @@
+.card{
+    background-color: white;
+    width: 85%;
+    border-radius: 12px;
+    border: 1px solid rgb(168, 198, 244);
+    border-image: initial;
+    padding: 10px;
+}
+.p-paginator .p-paginator-current {
+    background-color: transparent;
+    border: 0 none;
+    color: #6c757d;
+    min-width: 3rem;
+    height: 3rem;
+    margin: auto auto auto -1rem;
+    padding: 0 0.5rem;
+   
+}
+.p-paginator .p-paginator-last {
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    margin-right: 380px;
+}
+
+  
+ 
+  
+.custom-dropdown .p-dropdown-trigger .p-dropdown-trigger-icon {
+  display: none; 
+}
+
+.custom-dropdown {
+  cursor: pointer;
+  font-size: 1.2rem;
+  user-select: none;
+  border: none;
+  background-color: transparent;
+}
+

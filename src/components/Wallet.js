@@ -5,8 +5,11 @@ import img2 from "../Assets/3.png"
 import img3 from "../Assets/4.png"
 import img4 from "../Assets/5.png"
 import img5 from "../Assets/6.png"
+import Navbar from '../Utils/Navbar'
 const Wallet = () => {
   return (
+    <>
+    <Navbar/>
     <div>
         <div className="surface-0 text-center">
     <div className="mb-3 font-bold text-3xl">
@@ -62,6 +65,7 @@ const Wallet = () => {
 </div>
      
     </div>
+    </>
   )
 }
 

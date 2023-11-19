@@ -2,8 +2,11 @@
 import React from 'react';
 import './ContactUs.css'; // Make sure to include the CSS file
 import img from "../Assets/banner-05.png"
+import Navbar from '../Utils/Navbar';
 const ContactUs = () => {
   return (
+    <>
+    <Navbar/>
     <div className="container">
       <div className="content">
         <div className="left-side">
@@ -32,6 +35,7 @@ const ContactUs = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
