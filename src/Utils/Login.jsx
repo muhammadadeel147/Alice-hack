@@ -2,6 +2,7 @@ import { Button } from 'primereact/button'
 import { Checkbox } from 'primereact/checkbox'
 import { InputText } from 'primereact/inputtext'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Login = () => {
   return (
@@ -26,8 +27,11 @@ const Login = () => {
                 
                 <a href='#' className="font-medium no-underline ml-2 text-blue-500 text-right cursor-pointer">Forgot your password?</a>
             </div>
-
-            <Button label="Sign In" icon="pi pi-user" className="w-full" />
+            <Link to="/sign-in">
+  <Button label="Sign In" icon="pi pi-user" className="w-full" />
+</Link>
+        
+            
         </div>
     </div>
 </div>
