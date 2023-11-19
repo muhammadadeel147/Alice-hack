@@ -17,7 +17,7 @@ const Wallet = () => {
         <br/>
         <span className="text-blue-600"> OUR TRUSTED WALLETS</span>
     </div>
-    <div className="text-700 mb-6">Choose onre of Your Wallet</div>
+    <div className="text-700 mb-6">Choose one of Your Wallet</div>
     <div className="grid">
         <div className="col-12 md:col-4 mb-4 px-5">
             <span className="p-3 shadow-2 mb-3 inline-block" style={{ borderRadius: '10px' }}>

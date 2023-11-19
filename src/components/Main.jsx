@@ -1,5 +1,5 @@
 import React from 'react'
-// import Navbar from './Utils/Navbar';
+
 import Hero from "./Hero"
 import ProductCarousal from "./ProductCarousal"
 import Deals from '../Utils/Deals'

@@ -9,7 +9,7 @@ function Reports() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    // Populate initial data
+ 
     const initialData = [];
     for (let i = 3; i <= 7; i++) {
       const entry = {
@@ -31,7 +31,7 @@ function Reports() {
   }, []);
 
   const handleAddNFT = () => {
-    // Add a new entry when the "Add NFT" button is clicked
+  
     const newEntry = {
       id: data.length + 1,
       ID: `ID${data.length + 1}`,

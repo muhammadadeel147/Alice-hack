@@ -15,8 +15,8 @@ const Login = () => {
         <div className="text-center mb-5">
             <img src={img} alt="hyper" height={50} className="mb-3" />
             <div className="text-900 text-3xl font-medium mb-3">Welcome Back</div>
-            <span className="text-600 font-medium line-height-3">Don't have an account?</span>
-            <a className="font-medium no-underline ml-2 text-blue-500 cursor-pointer">Create today!</a>
+            <span className="text-600 font-medium line-height-3">Login to Dashboard</span>
+           
         </div>
 
         <div>
@@ -30,7 +30,7 @@ const Login = () => {
                 
                 <a href='#' className="font-medium no-underline ml-2 text-blue-500 text-right cursor-pointer">Forgot your password?</a>
             </div>
-            <Link to="/reports">
+            <Link to="/dashboard">
   <Button label="Sign In" icon="pi pi-user" className="w-full" />
 </Link>
            

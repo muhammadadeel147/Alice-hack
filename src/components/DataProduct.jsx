@@ -14,50 +14,49 @@ import img5 from "../Assets/6.png"
 
 export default function DataProduct() {
     const [products, setProducts] = useState([]);
-    const [selectedOption, setSelectedOption] = useState('latest'); // Default option is 'latest'
-
+    const [selectedOption, setSelectedOption] = useState('latest'); 
     useEffect(() => {
         const productData = [
             {
-                name: 'Product 1',
+                name: 'NFT 1',
                 price: 20.0,
-                category: 'Electronics',
+                category: 'NFT',
                 rating: 4,
                 inventoryStatus: 'INSTOCK',
                 image: img,
             },
             {
-                name: 'Product 1',
+                name: 'NFT 2',
                 price: 20.0,
-                category: 'Electronics',
+                category: 'NFT',
                 rating: 4,
                 inventoryStatus: 'INSTOCK',
                 image: img1,
             },   {
-                name: 'Product 1',
+                name: 'NFT 3',
                 price: 20.0,
-                category: 'Electronics',
+                category: 'NFT',
                 rating: 4,
                 inventoryStatus: 'INSTOCK',
                 image: img2,
             },   {
-                name: 'Product 1',
+                name: 'NFT 4',
                 price: 20.0,
-                category: 'Electronics',
+                category: 'NFT',
                 rating: 4,
                 inventoryStatus: 'INSTOCK',
                 image: img3,
             },   {
-                name: 'Product 1',
+                name: 'NFT 5',
                 price: 20.0,
-                category: 'Electronics',
+                category: 'NFT',
                 rating: 4,
                 inventoryStatus: 'INSTOCK',
                 image: img4,
             },   {
-                name: 'Product 1',
+                name: 'NFT 6',
                 price: 20.0,
-                category: 'Electronics',
+                category: 'NFT',
                 rating: 4,
                 inventoryStatus: 'INSTOCK',
                 image: img5,

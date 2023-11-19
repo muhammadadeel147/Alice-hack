@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { Button } from 'primereact/button';
 import { Carousel } from 'primereact/carousel';
 import { Tag } from 'primereact/tag';
-import img from "../Assets/2.PNG";
-import img1 from "../Assets/NFT12.jpg";
-import img2 from "../Assets/NFT4.jpg";
+import img from "../Assets/banner-04.png";
+import img1 from "../Assets/banner-05.png";
+import img2 from "../Assets/2.PNG";
 import img3 from "../Assets/NFT3.jpg";
 import img4 from "../Assets/NFT2.jpg";
 import img5 from "../Assets/NFT1.jpg";
@@ -30,45 +30,45 @@ export default function ProductCarousal() {
     ];
 
     useEffect(() => {
-        // Define product data directly within the component
+  
         const productData = [
             {
-                name: 'Product 1',
+                name: 'NFT',
                 price: 20.0,
                 image: img,
                 inventoryStatus: 'INSTOCK',
             },
             {
-                name: 'Product 2',
+                name: 'NFT DESIGN',
                 price: 25.0,
                 image: img1,
                 inventoryStatus: 'LOWSTOCK',
             },
             {
-                name: 'Product 1',
+                name: 'Monkey 1',
                 price: 20.0,
                 image: img2,
                 inventoryStatus: 'INSTOCK',
             },
             {
-                name: 'Product 2',
+                name: 'Monkey 2',
                 price: 25.0,
                 image: img3,
                 inventoryStatus: 'LOWSTOCK',
             },
             {
-                name: 'Product 1',
+                name: 'Monkey 3',
                 price: 20.0,
                 image: img4,
                 inventoryStatus: 'INSTOCK',
             },
             {
-                name: 'Product 2',
+                name: 'Monkey 4',
                 price: 25.0,
                 image: img5,
                 inventoryStatus: 'LOWSTOCK',
             },
-            // Add more products as needed
+        
         ];
 
         setProducts(productData.slice(0, 9));
@@ -123,7 +123,7 @@ export default function ProductCarousal() {
                 className="custom-carousel"
                 circular
                 autoplay
-                autoplayInterval={3000} // Adjust the interval as needed
+                autoplayInterval={3000} 
                 itemTemplate={productTemplate}
             />
         </div>

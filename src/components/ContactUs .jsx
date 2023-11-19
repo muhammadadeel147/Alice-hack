@@ -1,6 +1,6 @@
-// ContactUs.js
+
 import React from 'react';
-import './ContactUs.css'; // Make sure to include the CSS file
+import './ContactUs.css'; 
 import img from "../Assets/banner-05.png"
 
 const ContactUs = () => {

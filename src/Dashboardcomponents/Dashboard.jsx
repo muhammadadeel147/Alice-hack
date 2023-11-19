@@ -1,7 +1,7 @@
 
 import React, { useEffect, useState } from 'react';
 import Sidebar from './Sidebar';
-import { Button } from 'primereact/button';
+
 import { Chart } from 'primereact/chart';
 
 
@@ -10,12 +10,12 @@ const Dashboard = () => {
     const [chartOptions, setChartOptions] = useState({});
 
     useEffect(() => {
-        // Placeholder data for illustration purposes
+       
         const nftData = {
             labels: ['Purchased', 'Sold', 'Remaining'],
             datasets: [
                 {
-                    data: [80, 50, 30], // Placeholder data representing purchases, sales, and remaining items
+                    data: [80, 50, 30], 
                     backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56'],
                     hoverBackgroundColor: ['#FF6384', '#36A2EB', '#FFCE56'],
                 },

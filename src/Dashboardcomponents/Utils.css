@@ -55,12 +55,12 @@
   color: #fff;
   padding: 5px 20px;
   font-size: small;
-  /* transition: background-color 0.3s;  */
+
 
   &.active {
     background-color: #0c85fd;
     font-weight: bold;
-    /* font-size: 13px; */
+   
   }
 }
 .help li {

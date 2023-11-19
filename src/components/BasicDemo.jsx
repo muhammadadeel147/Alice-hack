@@ -9,8 +9,8 @@ export default function BasicDemo() {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        ProductService.getProducts().then((data) => setProducts(data));
-    }, []); // eslint-disable-line react-hooks/exhaustive-deps
+        ProductService.getProductsMini().then((data) => setProducts(data));
+    }, []); 
 
     const getSeverity = (product) => {
         switch (product.inventoryStatus) {
